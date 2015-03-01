@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_fondo"
+        android:src="@drawable/principal_back"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="80sp"
+        android:id="@+id/textView"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center_horizontal|top"
+        android:textColor="#ff2ac1c4"
+        android:fontFamily="serif"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_score"
+            android:layout_gravity="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#ff4fbf20"
+            android:id="@+id/tvHS"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/tv_puntuacion"
+            android:textSize="30sp"
+            android:textColor="#ff4fbf20" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/nuevo_juego"
+        android:id="@+id/boton_nuevo"
+        android:onClick="nuevoJuego"
+        android:layout_gravity="center"
+        android:background="@drawable/boton_principal"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+     />
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">JanNoid</string>
+    <string name="title_activity_actividad_juego">JanNoid</string>
+    <string name="nuevo_juego">Nueva Partida</string>
+    <string name="puntuacion">Puntuacion</string>
+    <string name="high_score">HIGH SCORE</string>
+
+</resources>
