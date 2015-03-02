@@ -218,12 +218,12 @@ public class VistaJuego extends SurfaceView implements SurfaceHolder.Callback, S
     private void crearPelota(){
         Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.ball);
         bmpBola = Bitmap.createScaledBitmap(b, ancho * 5 / 100, ancho * 5 / 100, false);
+        pelota = new Pelota(bmpBola, ancho, alto);
     }
 
     private void crearPlataforma(){
         Bitmap b = BitmapFactory.decodeResource(getResources(), R.drawable.plataforma);
         bmpPlataforma = Bitmap.createScaledBitmap(b, ancho * 20 / 100, ancho * 3 / 100, false);
-        pelota = new Pelota(bmpBola, ancho, alto);
         plataforma = new Plataforma(bmpPlataforma, ancho, alto);
     }
 
