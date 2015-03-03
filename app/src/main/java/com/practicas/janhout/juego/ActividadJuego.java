@@ -28,6 +28,13 @@ public class ActividadJuego extends Activity {
     }
 
     @Override
+    protected void onStop() {
+        super.onStop();
+        setResult(Activity.RESULT_CANCELED);
+        finish();
+    }
+
+    @Override
     public void onBackPressed() {
         setResult(Activity.RESULT_CANCELED);
         finish();
